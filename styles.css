@@ -1,0 +1,171 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+.title{
+    font-size:2rem;
+    font-weight: 600;
+    background-color: rgb(225, 155, 195);
+    margin-top: 2rem;
+}
+.header{
+   display:flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+
+.header-text{
+    padding:2% 20% 0 20%;
+    font-size: 1.3rem;
+}
+
+.puzzle{
+    margin-top: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    font-size: 1.5rem;
+    width: 100%;
+    margin-left: 25%;
+  
+}
+
+.unit{
+    display:flex;
+    flex-direction: row;
+    align-items: left;
+    padding-left: 1rem;
+    margin-bottom:5px;
+   
+    /* justify-content: center; */
+}
+
+
+.number{
+    color:black;
+    width:2rem;
+    font-weight:600;
+   
+}
+
+.word{
+width:12rem;
+margin-top: 3px;
+}
+
+
+input{
+    width:2em;
+    height:2rem;
+    font-size: 1rem;
+    padding: 0;
+    margin: -4px;
+    text-align: center;
+    border: 1.5px black solid;
+}
+
+.correct{
+    font-size:1rem;
+    width:1.5rem;
+    height:1.5rem;
+    margin-left: 5px;
+    background-color: rgb(69, 212, 69);
+    visibility: hidden;
+    margin-top: 8px;
+}
+
+@media screen and (max-width:950px){
+ 
+    .correct{
+        width:1rem;
+    }
+    .header-text{
+        padding:5% 2% 0 5%;
+        font-size: 1.3rem;
+    }
+    .puzzle{
+        margin-left: 5%;
+        justify-content: left;
+    }
+
+}
+
+@media screen and (max-width:700px){
+ .word{
+    font-size: 1.5rem;
+ }
+    .correct{
+        width:1rem;
+    }
+    .header-text{
+        padding:5% 2% 0 5%;
+        font-size: 1.3rem;
+    }
+    .puzzle{
+        margin-left: 0%;
+        justify-content: left;
+    }
+    input{
+        width: 1.8rem;
+        height:1.8rem;
+    }
+
+}
+@media screen and (max-width:600px){
+ 
+    .title{
+        font-size: 1.5rem;
+    }
+    .header-text{
+        padding:5% 2% 0 5%;
+        font-size: 1.3rem;
+    }
+    .puzzle{
+        margin-left: 0%;
+    }
+    .word{
+        font-size: 1.5rem;
+        width:auto;
+        margin-right:1rem;
+    }
+
+}
+
+@media screen and (max-width:480px){
+    .puzzle{
+        margin-left: 0;
+        font-size: 1.2rem;
+    }
+    .header-text{
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+    .word{
+        width:auto;
+        margin-right:1rem;
+        font-size: 1.3rem;
+    }
+    .title{
+        font-size: 1.5rem;
+    }
+ .number{
+margin-top:3px;
+ }
+
+ input{
+    padding:0;
+    margin: -3px;
+    width:1.2rem;
+    height:1.2rem;
+   
+ }
+ #last{
+    display:flex;
+    flex-wrap:wrap;
+ }
+
+}
+
